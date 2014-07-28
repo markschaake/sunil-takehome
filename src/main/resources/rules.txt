@@ -1,0 +1,12 @@
+english(barrons.rule1, "Animals and plants are living things").
+pretty(barrons.rule1, "EXAMPLE(Animal, Thing), Animal = 'Animals', Thing = 'living things'.").
+barrons.rule1:: isa(A1S4-animal, "Animals") -> example(A1S4-animal, A6S4-thing), isa(A6S4-thing, "living things").
+english(barrons.rule2, "Animals and plants are living things").
+pretty(barrons.rule2, "EXAMPLE(Animal, Thing), Animal = 'Animals', Thing = 'living things'.").
+barrons.rule2:: isa(A6S4-thing, "living things") -> example(A1S4-animal, A6S4-thing), isa(A1S4-animal, "Animals").
+english(barrons.rule3, "Animals and plants are living things").
+pretty(barrons.rule3, "EXAMPLE(Plant, Thing), Plant = 'plants', Thing = 'living things'.").
+barrons.rule3:: isa(A3S4-plant, "plants") -> example(A3S4-plant, A6S4-thing), isa(A6S4-thing, "living things").
+english(barrons.rule4, "Animals and plants are living things").
+pretty(barrons.rule4, "EXAMPLE(Plant, Thing), Plant = 'plants', Thing = 'living things'.").
+barrons.rule4:: isa(A6S4-thing, "living things") -> example(A3S4-plant, A6S4-thing), isa(A3S4-plant, "plants").
